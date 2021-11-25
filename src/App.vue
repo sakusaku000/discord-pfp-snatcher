@@ -11,7 +11,7 @@
             </div>
 
             <span class="fixed bottom-4 left-4 select-none">discord avatar snatcher</span>
-            <span class="fixed bottom-4 right-4 select-none">by <a href="https://github.com/sakusaku000" target="_blank">saku</a> :)</span>
+            <span class="fixed bottom-4 right-4 select-none">by <a href="https://github.com/sakusaku000" target="_blank">saku</a></span>
         </div>
 
         <div v-if="fetching">
