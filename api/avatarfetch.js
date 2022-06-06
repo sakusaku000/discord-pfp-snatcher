@@ -7,7 +7,8 @@ module.exports = async (req, res) => {
         const {id} = req.query;
         try {
             const user = await get(`https://discord.com/api/v9/users/${id}`, {headers:{"Authorization": `Bot ${process.env.VUE_APP_BOT_TOKEN}`}});
-            return res.status(200).send({
+            return res.status(200).json({
+                id:user.data.id,
                 name:user.data.username,
                 discrim:user.data.discriminator,
                 avatar:user.data.avatar
